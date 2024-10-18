@@ -29,7 +29,7 @@ ttFont = TTFont(MAIN_FONT_PATH)
 # Draws a grid
 def grid():
     """Draws a grid using DrawBot-Skia"""
-    db.stroke(0.2, 0.2, 0.2, 1.00)
+    db.stroke(0.3, 0.3, 0.3, 1.00)
     db.strokeWidth(2)
     step_x = 0
     step_y = 0
@@ -60,7 +60,7 @@ def draw_background():
     db.newPage(WIDTH, HEIGHT)
     db.fill(0.2)
     db.fill(0.025)
-    db.fill(0.1)
+    db.fill(0.075)
     db.rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
@@ -69,7 +69,7 @@ def draw_background():
 
 
 # Draw main text
-GRID_VIEW = False  # Toggle this for a grid overlay
+GRID_VIEW = True  # Toggle this for a grid overlay
 def draw_main_text():
     # db.image("documentation/auxiliary-images/bg_001.png", (0, 0), alpha=1.0)
     db.fill(0.9)
@@ -77,16 +77,18 @@ def draw_main_text():
     db.font(MAIN_FONT_PATH)
     
     db.fontSize(192)
-    db.text("The Improbable", (MARGIN * 2, UNIT * 46.0))
-    db.text("Dome Builders", (MARGIN * 2, UNIT * 41.0))
+    db.text("The Improbable", (MARGIN * 2, UNIT * 45.0))
+    db.text("Dome Builders", (MARGIN * 2, UNIT * 40.0))
     
     db.fontSize(128)
-    db.text("The Improbable", (MARGIN * 2, UNIT * 34.0))
-    db.text("Dome Builders", (MARGIN * 2, UNIT * 30.0))
+    db.text("The Improbable", (MARGIN * 2, UNIT * 33.0))
+    db.text("Dome Builders", (MARGIN * 2, UNIT * 29.0))
     
     db.fontSize(64)
-    db.text("The Improbable", (MARGIN * 2, UNIT * 24.0))
-    db.text("Dome Builders", (MARGIN * 2, UNIT * 22.0))
+    db.text("The Improbable", (MARGIN * 2, UNIT * 23.0))
+    db.text("Dome Builders", (MARGIN * 2, UNIT * 21.0))
+    db.text("nonono nnnn oooo on no noon onno", (MARGIN * 2, UNIT * 19.0))
+    db.text("AVA HOHOHO HOOH Hoon Hnono Hon", (MARGIN * 2, UNIT * 17.0))
     
 
 
