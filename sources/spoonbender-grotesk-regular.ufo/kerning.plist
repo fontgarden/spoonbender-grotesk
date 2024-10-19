@@ -2,15 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>public.kern1.A</key>
+  
+  <key>public.kern1.A</key>
 	<dict>
 		<key>public.kern2.V</key>
-		<integer>-130</integer>
+		<integer>-128</integer>
 	</dict>
-	<key>public.kern1.V</key>
+    
+  <key>public.kern1.V</key>
 	<dict>
 		<key>public.kern2.A</key>
-		<integer>-130</integer>
+		<integer>-128</integer>
 	</dict>
+
+  <key>public.kern1.r</key>
+	<dict>
+		<key>public.kern2.o</key>
+		<integer>-64</integer>
+	</dict>
+    
 </dict>
 </plist>
