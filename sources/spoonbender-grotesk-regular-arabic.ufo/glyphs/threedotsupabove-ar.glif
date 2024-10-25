@@ -45,4 +45,6 @@
 			<point x="108" y="796"/>
 		</contour>
 	</outline>
+	<anchor name="_topDots" x="204" y="576"/>
+	<anchor name="top" x="204" y="924"/>
 </glyph>
