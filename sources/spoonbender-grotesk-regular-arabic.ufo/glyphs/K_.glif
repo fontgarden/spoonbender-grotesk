@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="K" format="2">
+  <advance width="704"/>
+  <unicode hex="004B"/>
+  <anchor x="344" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="88" y="0" type="line"/>
+      <point x="168" y="0" type="line"/>
+      <point x="184" y="16" type="line"/>
+      <point x="184" y="276" type="line"/>
+      <point x="194" y="286" type="line"/>
+      <point x="308" y="396" type="line"/>
+      <point x="320" y="396" type="line"/>
+      <point x="604" y="12" type="line"/>
+      <point x="620" y="0" type="line"/>
+      <point x="664" y="0" type="line"/>
+      <point x="680" y="16" type="line"/>
+      <point x="680" y="84" type="line"/>
+      <point x="670" y="98" type="line"/>
+      <point x="396" y="468" type="line"/>
+      <point x="396" y="480" type="line"/>
+      <point x="631" y="707" type="line"/>
+      <point x="644" y="720" type="line"/>
+      <point x="644" y="784" type="line"/>
+      <point x="628" y="800" type="line"/>
+      <point x="584" y="800" type="line"/>
+      <point x="574" y="791" type="line"/>
+      <point x="196" y="428" type="line"/>
+      <point x="184" y="428" type="line"/>
+      <point x="184" y="784" type="line"/>
+      <point x="168" y="800" type="line"/>
+      <point x="88" y="800" type="line"/>
+      <point x="72" y="784" type="line"/>
+      <point x="72" y="16" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.schriftgestaltung.Glyphs.lastChange</key>
+      <string>2024-08-15 02:27:16 +0000</string>
+      <key>public.markColor</key>
+      <string>0.04,0.57,0.04,1</string>
+    </dict>
+  </lib>
+</glyph>
