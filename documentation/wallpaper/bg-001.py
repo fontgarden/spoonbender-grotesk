@@ -9,7 +9,7 @@ from fontTools.ttLib import TTFont
 
 # Constants, these are the main "settings" for the image
 WIDTH, HEIGHT, MARGIN, UNIT, FRAMES = 3840, 2160, 80, 40, 1
-MAIN_FONT_PATH = "fonts/spoonbender-grotesk-regular.ttf"
+MAIN_FONT_PATH = "fonts/spoonbender-grotesk-regular-arabic.ttf"
 AUXILIARY_FONT = "Helvetica"
 
 
@@ -82,10 +82,11 @@ def draw_main_text():
     db.text("Interaction Ritual", (MARGIN * 2, UNIT * 36.0))
     db.text("The Improbable", (MARGIN * 2, UNIT * 31.0))
     db.text("Dome Builders", (MARGIN * 2, UNIT * 26.0))
+    db.text("با با با", (MARGIN * 6, UNIT * 21.0))
     
     db.fontSize(64)
-    db.text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (MARGIN * 2, UNIT * 22.0))
-    db.text("abcdefghijklmnopqrstuvwxyz", (MARGIN * 2, UNIT * 20.0))
+    #db.text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (MARGIN * 2, UNIT * 22.0))
+    #db.text("abcdefghijklmnopqrstuvwxyz", (MARGIN * 2, UNIT * 20.0))
     db.text("Interaction Ritual", (MARGIN * 2, UNIT * 18.0))
     db.text("The Improbable", (MARGIN * 2, UNIT * 16.0))
     db.text("Dome Builders AHO Ano AHAH AOAO Hnn HnHn AVA", (MARGIN * 2, UNIT * 14.0))
