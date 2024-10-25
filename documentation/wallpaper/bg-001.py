@@ -29,7 +29,7 @@ ttFont = TTFont(MAIN_FONT_PATH)
 # Draws a grid
 def grid():
     """Draws a grid using DrawBot-Skia"""
-    db.stroke(0.3, 0.3, 0.3, 1.00)
+    db.stroke(0.3, 0.3, 0.3, 0.250)
     db.strokeWidth(2)
     step_x = 0
     step_y = 0
@@ -77,18 +77,20 @@ def draw_main_text():
     db.font(MAIN_FONT_PATH)
     
     db.fontSize(192)
-    db.text("The Improbable", (MARGIN * 2, UNIT * 45.0))
-    db.text("Dome Builders", (MARGIN * 2, UNIT * 40.0))
-    
-    db.fontSize(128)
-    db.text("The Improbable", (MARGIN * 2, UNIT * 33.0))
-    db.text("Dome Builders", (MARGIN * 2, UNIT * 29.0))
+    db.text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (MARGIN * 2, UNIT * 46.0))
+    db.text("abcdefghijklmnopqrstuvwxyz", (MARGIN * 2, UNIT * 41.0))
+    db.text("Interaction Ritual", (MARGIN * 2, UNIT * 36.0))
+    db.text("The Improbable", (MARGIN * 2, UNIT * 31.0))
+    db.text("Dome Builders", (MARGIN * 2, UNIT * 26.0))
     
     db.fontSize(64)
-    db.text("The Improbable", (MARGIN * 2, UNIT * 23.0))
-    db.text("Dome Builders", (MARGIN * 2, UNIT * 21.0))
-    db.text("nonono nnnn oooo on no noon onno", (MARGIN * 2, UNIT * 19.0))
-    db.text("AVA HOHOHO HOOH Hoon Hnono Hon", (MARGIN * 2, UNIT * 17.0))
+    db.text("ABCDEFGHIJKLMNOPQRSTUVWXYZ", (MARGIN * 2, UNIT * 22.0))
+    db.text("abcdefghijklmnopqrstuvwxyz", (MARGIN * 2, UNIT * 20.0))
+    db.text("Interaction Ritual", (MARGIN * 2, UNIT * 18.0))
+    db.text("The Improbable", (MARGIN * 2, UNIT * 16.0))
+    db.text("Dome Builders AHO Ano AHAH AOAO Hnn HnHn AVA", (MARGIN * 2, UNIT * 14.0))
+    db.text("nonono nnnn oooo ononon noon onno", (MARGIN * 2, UNIT * 12.0))
+    db.text("HOHOHO HHHH OOOO OHOHOH HOOH OHHO", (MARGIN * 2, UNIT * 10.0))
     
 
 
