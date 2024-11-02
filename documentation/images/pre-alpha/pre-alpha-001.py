@@ -8,8 +8,8 @@ from fontTools.ttLib import TTFont
 
 
 # Constants, these are the main "settings" for the image
-WIDTH, HEIGHT, MARGIN, FRAMES = 1080, 1920, 80, 1
-MAIN_FONT_PATH = "fonts/spoonbender-grotesk-regular.ttf"
+WIDTH, HEIGHT, MARGIN, FRAMES = 1080, 1080, 80, 1
+MAIN_FONT_PATH = "fonts/spoonbender-grotesk-regular-arabic.ttf"
 AUXILIARY_FONT = "Helvetica"
 
 
@@ -69,68 +69,18 @@ def draw_background():
 
 
 # Draw main text
-GRID_VIEW = False  # Toggle this for a grid overlay
+GRID_VIEW = True  # Toggle this for a grid overlay
 def draw_main_text():
-    # db.image("documentation/auxiliary-images/bg_001.png", (0, 0), alpha=1.0)
+    db.image("documentation/images/flux-raw/lava-001.png", (0, -450), alpha=1.0)
     db.fill(0.975)
     db.fill(0.9)
     db.stroke(None)
     db.font(MAIN_FONT_PATH)
-    db.fontSize(512 + 32)
-    db.fontSize(80)
-    
-    
-    #db.text("nnnn oooo nononono on", (MARGIN - 0, MARGIN * 22.0))
-    #db.text("nnoonnoo onononon no", (MARGIN - 0, MARGIN * 21.0))
-    #db.text("i no no", (MARGIN - 0, MARGIN * 20.0))
+    db.fontSize(128+32)
+    db.tracking(-30)
 
-    #db.fontSize(80*2)
-    #db.text("nnnn", (MARGIN - 0, MARGIN * 16.0))
-
-    #db.fontSize(80)
-    #db.font("Helvetica")
-    #db.font(None)
-    #db.text("nnnn oooo nononono on", (MARGIN - 0, MARGIN * 12.0))
-    #db.text("nnoonnoo onononon no", (MARGIN - 0, MARGIN * 11.0))
-    #db.text("i no no", (MARGIN - 0, MARGIN * 10.0))
-
-    #db.font("Helvetica")
-    #db.font(None)
-    #db.text("nnnn oooo nononono on", (MARGIN - 0, MARGIN * 9.0))
-    #db.text("nnoonnoo onononon no", (MARGIN - 0, MARGIN * 8.0))
-    #db.text("i no no", (MARGIN - 0, MARGIN * 7.0))
-
-    db.text("The Improbable", (MARGIN - 8, MARGIN * 22.0))
-    db.text("Dome Builders", (MARGIN - 8, MARGIN * 21.0))
-    
-    db.text("Interaction", (MARGIN - 8, MARGIN * 19.0))
-    db.text("Ritual HOno HOno", (MARGIN - 8, MARGIN * 18.0))
-    
-    #db.text("Grid Systems", (MARGIN - 8, MARGIN * 16.0))
-    #db.text("Raster Systeme", (MARGIN - 8, MARGIN * 15.0))
-    db.text("abcdefghijklm", (MARGIN - 8, MARGIN * 16.0))
-    db.text("nopqrstuvwxy", (MARGIN - 8, MARGIN * 15.0))
-    
-    #db.text("THE OASIS OF", (MARGIN - 8, MARGIN * 13.0))
-    #db.text("MATISSE", (MARGIN - 8, MARGIN * 12.0))
-    
-    #db.text("KLMNOPQRS", (MARGIN - 8, MARGIN * 11.0))
-    #db.text("TUVWXYZ", (MARGIN - 8, MARGIN * 9.0))
-    #db.text("1234567890", (MARGIN - 8, MARGIN * 7.0))
-    #db.text("abcdefghijklm", (MARGIN - 8, MARGIN * 5.0))
-    #db.text("nopqrstuvwxy", (MARGIN - 8, MARGIN * 3.0))
-    #db.text("Rena Regular", (MARGIN - 8, MARGIN * 1.0))
-    # db.text("Rena Regular", (MARGIN - 8, MARGIN * 1.0))
-    # db.text("NOPQRSTUVWXY", (MARGIN - 24, MARGIN * 12.0))
-    # db.text("abcdefghijklmnopq", (MARGIN - 24, MARGIN * 10.5))
-    # db.text("rstuvwxyz", (MARGIN - 24, MARGIN * 9.0))
-    # db.text("1234567890", (MARGIN - 24, MARGIN * 7.5))
-    # db.text("Rena Regular ", (MARGIN - 24, MARGIN * 6.0))
-    # db.text("Rena Regular ", (MARGIN - 24, MARGIN * 4.5))
-    # db.text("Rena Regular ", (MARGIN - 24, MARGIN * 3.0))
-    # db.text("Rena Regular ", (MARGIN - 24, MARGIN * 1.5))
-    # db.text("Rena Regular ", (MARGIN - 24, MARGIN * 0.0))
-
+    db.text("Interaction", (MARGIN - 16, MARGIN * 11.0))
+    db.text("Ritual", (MARGIN - 16, MARGIN * 9.0))
 
 # Build and save the image
 if __name__ == "__main__":
