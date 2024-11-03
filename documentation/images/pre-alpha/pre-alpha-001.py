@@ -72,6 +72,7 @@ def draw_main_text():
     db.font(MAIN_FONT_PATH)
     
     db.fontSize(128+32)
+    db.fontSize(128+48)
     db.text("Interaction", (MARGIN - 8, MARGIN * 11.0))
     db.text("Ritual", (MARGIN - 8, MARGIN * 9.0))
     
