@@ -44,7 +44,6 @@ def grid():
     db.polygon((WIDTH / 2, 0), (WIDTH / 2, HEIGHT))
     db.polygon((0, HEIGHT / 2), (WIDTH, HEIGHT / 2))
 
-
 # Remap input range to VF axis range
 # This is useful for animation
 # (E.g. sinewave(-1,1) to wght(100,900))
@@ -54,12 +53,9 @@ def remap(value, inputMin, inputMax, outputMin, outputMax):
     valueScaled = float(value - inputMin) / float(inputSpan)
     return outputMin + (valueScaled * outputSpan)
 
-
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
 def draw_background():
     db.newPage(WIDTH, HEIGHT)
-    db.fill(0.2)
-    db.fill(0.025)
     db.fill(0.05)
     db.rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
@@ -67,20 +63,20 @@ def draw_background():
     else:
         pass
 
-
 # Draw main text
 GRID_VIEW = True  # Toggle this for a grid overlay
 def draw_main_text():
-    db.image("documentation/images/flux-raw/lava-001.png", (0, -450), alpha=1.0)
-    db.fill(0.975)
+    db.image("documentation/images/flux-raw/lava-001-3x-rem.png", (0, -1100), alpha=1.0)
     db.fill(0.9)
     db.stroke(None)
     db.font(MAIN_FONT_PATH)
+    
     db.fontSize(128+32)
-    db.tracking(-30)
-
-    db.text("Interaction", (MARGIN - 16, MARGIN * 11.0))
-    db.text("Ritual", (MARGIN - 16, MARGIN * 9.0))
+    db.text("Interaction", (MARGIN - 8, MARGIN * 11.0))
+    db.text("Ritual", (MARGIN - 8, MARGIN * 9.0))
+    
+    db.fontSize(32+16+4)
+    db.text("QFont Garden", (MARGIN - 2, MARGIN * 1.0))
 
 # Build and save the image
 if __name__ == "__main__":
@@ -88,5 +84,4 @@ if __name__ == "__main__":
     draw_main_text()
     # Save output, using the "--output" flag location
     db.saveImage(args.output)
-    # Print done in the terminal
     print("DB-Skia: Done")
