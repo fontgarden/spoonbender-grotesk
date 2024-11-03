@@ -12,5 +12,10 @@
 		<key>public.kern2.A</key>
 		<integer>-128</integer>
 	</dict>
+	<key>public.kern1.t</key>
+	<dict>
+		<key>public.kern2.o</key>
+		<integer>-16</integer>
+	</dict>
 </dict>
 </plist>

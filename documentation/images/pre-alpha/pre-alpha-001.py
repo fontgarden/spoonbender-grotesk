@@ -1,17 +1,14 @@
 # Usage example:
 # $ python3 image_001.py --output image_001.png
 
-
 import argparse
 import drawbot_skia.drawbot as db
 from fontTools.ttLib import TTFont
-
 
 # Constants, these are the main "settings" for the image
 WIDTH, HEIGHT, MARGIN, FRAMES = 1080, 1080, 80, 1
 MAIN_FONT_PATH = "fonts/spoonbender-grotesk-regular-arabic.ttf"
 AUXILIARY_FONT = "Helvetica"
-
 
 # Handel the "--output" flag
 # For example: $ python3 documentation/image1.py --output documentation/image1.png
@@ -19,12 +16,10 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--output", metavar="PNG", help="where to write the PNG file")
 args = parser.parse_args()
 
-
 # Load the font with the parts of fonttools that are imported with the line:
 # from fontTools.ttLib import TTFont
 # Docs Link: https://fonttools.readthedocs.io/en/latest/ttLib/ttFont.html
 ttFont = TTFont(MAIN_FONT_PATH)
-
 
 # Draws a grid
 def grid():
