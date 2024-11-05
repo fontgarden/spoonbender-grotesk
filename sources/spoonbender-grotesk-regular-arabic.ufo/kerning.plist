@@ -4,6 +4,8 @@
 <dict>
 	<key>public.kern1.A</key>
 	<dict>
+		<key>public.kern2.T</key>
+		<integer>0</integer>
 		<key>public.kern2.V</key>
 		<integer>-128</integer>
 	</dict>

@@ -1,15 +1,8 @@
 #!/bin/bash
 
-# Add new left kerning group
 lilufo -u sources/spoonbender-grotesk-regular-arabic.ufo \
-  --add-kerning-group \
-  --group-name "T" \
-  --group-side "left" \
-  --group-members "T"
+  --add-kerning-pair \
+  --first "@A" \
+  --second "@T" \
+  --value=0
 
-# Add new right kerning group
-lilufo -u sources/spoonbender-grotesk-regular-arabic.ufo \
-  --add-kerning-group \
-  --group-name "T" \
-  --group-side "right" \
-  --group-members "T"
