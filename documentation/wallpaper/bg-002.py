@@ -75,10 +75,14 @@ def draw_main_text():
     db.stroke(None)
     db.font(MAIN_FONT_PATH)
     
-    db.fontSize(192)
-    db.text("ATHO", (MARGIN * 2, UNIT * 46.0))
-    db.text("ATHO", (MARGIN * 2, UNIT * 41.0))
-
+    font_size = 192
+    y = 46
+    for i in range(18):
+        db.fontSize(font_size)
+        db.text("ATHO", (MARGIN * 2, UNIT * y))
+        font_size -= 16
+        y -= 4
+        
 # Build and save the image
 if __name__ == "__main__":
     draw_background()
