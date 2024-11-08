@@ -4,5 +4,5 @@ lilufo -u sources/spoonbender-grotesk-regular-arabic.ufo \
   --add-kerning-pair \
   --first "@A" \
   --second "@T" \
-  --value=0
+  --value=-128
 
